@@ -13,7 +13,7 @@ import os.path as osp
 
 dataset_name = 'MUTAG'
 path = osp.join(osp.dirname(osp.realpath(__file__)), 'data', 'TU')
-# dataset = TUDataset(path, name='MUTAG').shuffle()
+
 dataset = TUDataset(path, name=dataset_name)
 ckpt_name = '_'.join((dataset_name, 'GCN'))
 ckpt_path = osp.join(osp.dirname(osp.realpath(__file__)), 'checkpoints', ckpt_name+'.pt')
@@ -32,7 +32,7 @@ explainer = HeterExplainer(model, dataset_name, MUTAG_dataset=dataset, device=de
 
 for k in [10, 15, 20, 25, 30]:
 
-    print(f"k = {k}")
+    print(f"\n k = {k}")
 
     result_path = osp.join(osp.dirname(osp.realpath(__file__)), 'result', dataset_name, 'previous_results', f"k{k}/")
 

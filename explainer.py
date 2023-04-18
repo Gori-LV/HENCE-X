@@ -344,7 +344,7 @@ class HeterExplainer:
         # if num_samples_needed>=num_samples:
         #     num_samples=num_samples_needed
 
-        print("Generating "+str(num_samples)+" samples on target: " + str(target))
+        # print("Generating "+str(num_samples)+" samples on target: " + str(target))
 
         self.MLE_sampled_data = {}
 
@@ -418,13 +418,13 @@ class HeterExplainer:
 
         if perturb_range==0: 
 
-            print('GNN prediction never change!')
+            # print('GNN prediction never change!')
             self.MLE_sampling_fail = True
             self.MLE_cat_y_cap = np.ones(self.MLE_ori_sampled_y_cap.shape)
             return g, mapping
 
         elif perturb_range<pred_threshold:
-            print('perturb range too small, decrease pred_threshold')
+            # print('perturb range too small, decrease pred_threshold')
             pred_threshold/=2
 
         self.MLE_cat_y_cap =  np.where(self.MLE_ori_sampled_y_cap<=(self.MLE_ori_sampled_y_cap.min()+pred_threshold), 0, self.MLE_ori_sampled_y_cap)
@@ -450,7 +450,7 @@ class HeterExplainer:
 
             to_substitute = np.argmax(counts)
             p_perturb = self.adjustPperturb(np.argmin(counts))
-            print(f"new p perturb: {p_perturb}")
+            # print(f"new p perturb: {p_perturb}")
 
             while how_many_more>0 and step<2*num_samples:
                 # print(how_many_more)
@@ -549,7 +549,7 @@ class HeterExplainer:
                         self.MLE_sampled_data[key] = self.MLE_sampled_data[key][:-1, :]
             if how_many_more>0 and step==10*num_samples:
                 self.MLE_sampling_fail = True
-                print('WARNING: MLE sampling failed!')
+                # print('WARNING: MLE sampling failed!')
 
         return g, mapping
 
@@ -574,7 +574,7 @@ class HeterExplainer:
         # if num_samples_needed>=num_samples:
         #     num_samples=num_samples_needed
 
-        print("Generating "+str(num_samples)+" samples on target: " + str(target))
+        # print("Generating "+str(num_samples)+" samples on target: " + str(target))
 
         self.MLE_sampled_data = {}
 
@@ -636,13 +636,13 @@ class HeterExplainer:
 
         if perturb_range==0: 
 
-            print('GNN prediction never change!')
+            # print('GNN prediction never change!')
             self.MLE_sampling_fail = True
             self.MLE_cat_y_cap = np.ones(self.MLE_ori_sampled_y_cap.shape)
             return g, mapping
 
         elif perturb_range<pred_threshold:
-            print('perturb range too small, decrease pred_threshold')
+            # print('perturb range too small, decrease pred_threshold')
             pred_threshold/=2
 
         self.MLE_cat_y_cap =  np.where(self.MLE_ori_sampled_y_cap<=(self.MLE_ori_sampled_y_cap.min()+pred_threshold), 0, self.MLE_ori_sampled_y_cap)
@@ -667,7 +667,7 @@ class HeterExplainer:
 
             to_substitute = np.argmax(counts)
             p_perturb = self.adjustPperturb(np.argmin(counts))
-            print(f"new p perturb: {p_perturb}")
+            # print(f"new p perturb: {p_perturb}")
 
             while how_many_more>0 and step<2*num_samples:
                 # print(how_many_more)
@@ -750,7 +750,7 @@ class HeterExplainer:
                         self.MLE_sampled_data[key] = self.MLE_sampled_data[key][:-1, :]
             if how_many_more>0 and step==10*num_samples:
                 self.MLE_sampling_fail = True
-                print('WARNING: MLE sampling failed!')
+                # print('WARNING: MLE sampling failed!')
 
         return g, mapping
 
@@ -765,7 +765,7 @@ class HeterExplainer:
 
         num_samples = max(k*(data.x.count_nonzero().item()+n_cat_value), num_samples)
 
-        print("Generating "+str(num_samples)+" samples on target: " + str(target))
+        # print("Generating "+str(num_samples)+" samples on target: " + str(target))
 
         self.MLE_sampled_data = {}
 
@@ -822,13 +822,13 @@ class HeterExplainer:
 
         if perturb_range==0: 
 
-            print('GNN prediction never change!')
+            # print('GNN prediction never change!')
             self.MLE_sampling_fail = True
             self.MLE_cat_y_cap = np.ones(self.MLE_ori_sampled_y_cap.shape)
             return 
 
         elif perturb_range<pred_threshold:
-            print('perturb range too small, decrease pred_threshold')
+            # print('perturb range too small, decrease pred_threshold')
             pred_threshold/=2
 
         self.MLE_cat_y_cap =  np.where(self.MLE_ori_sampled_y_cap<=(self.MLE_ori_sampled_y_cap.min()+pred_threshold), 0, self.MLE_ori_sampled_y_cap)
@@ -853,7 +853,7 @@ class HeterExplainer:
 
             to_substitute = np.argmax(counts)
             p_perturb = self.adjustPperturb(np.argmin(counts))
-            print(f"new p perturb: {p_perturb}")
+            # print(f"new p perturb: {p_perturb}")
 
             while how_many_more>0 and step<2*num_samples:
                 # print(how_many_more)
@@ -932,7 +932,7 @@ class HeterExplainer:
                         self.MLE_sampled_data[key] = self.MLE_sampled_data[key][:-1, :]
             if how_many_more>0 and step==10*num_samples:
                 self.MLE_sampling_fail = True
-                print('WARNING: MLE sampling failed!')
+                # print('WARNING: MLE sampling failed!')
 
         return 
 
@@ -3474,10 +3474,11 @@ class HeterExplainer:
 
     def readLabelDict(self):
 
-        root = osp.dirname(osp.realpath(__file__)).split('pytorch_geometric_hetero')[0]+'pytorch_geometric_hetero/'
+        # root = osp.dirname(osp.realpath(__file__)).split('pytorch_geometric_hetero')[0]+'pytorch_geometric_hetero/'
+        root = osp.join(osp.dirname(osp.realpath(__file__)))
 
         if self.dataset=='DBLP':
-            pickle_path = root+'data/'+self.dataset+'/'
+            pickle_path = root+'/data/'+self.dataset+'/'
             label_dict = {}
             label_dict['paper'] = pd.read_pickle(pickle_path+"papers_df.pkl").to_numpy()
             label_dict['author'] = pd.read_pickle(pickle_path+"authors_df.pkl").to_numpy()
@@ -3488,9 +3489,11 @@ class HeterExplainer:
 
     def printMeaningDBLP(self, S, feature_exp):
 
+        root = osp.join(osp.dirname(osp.realpath(__file__)))
+
         ### check bag-of-words
-        bag_of_words_paper = np.load('data/DBLP/bag_of_words_paper.npy', allow_pickle=True)
-        bag_of_words_author = np.load('data/DBLP/bag_of_words_author.npy', allow_pickle=True)
+        bag_of_words_paper = np.load(root+'/data/DBLP/bag_of_words_paper.npy', allow_pickle=True)
+        bag_of_words_author = np.load(root+'/data/DBLP/bag_of_words_author.npy', allow_pickle=True)
 
         # pickle_path = 'data/DBLP/'
         # label_dict = {}
@@ -3528,9 +3531,11 @@ class HeterExplainer:
 
     def printMeaningIMDB(self, S, feature_exp=None):
 
-        bag_of_words = np.load('data/IMDB/bag_of_words_movie.npy', allow_pickle=True)
-        plot_keywords = np.load('data/IMDB/movie_plot_keywords.npy')
-        with open('data/IMDB/movie_name.json') as f:
+        root = osp.join(osp.dirname(osp.realpath(__file__)))
+
+        bag_of_words = np.load(root+'/data/IMDB/bag_of_words_movie.npy', allow_pickle=True)
+        plot_keywords = np.load(root+'/data/IMDB/movie_plot_keywords.npy')
+        with open(root+'/data/IMDB/movie_name.json') as f:
             movie_name = json.load(f)
 
         for node in S:
