@@ -4,7 +4,7 @@ This is the official implement of the paper HENCE-X: Toward Heterogeneity-agnost
 
 [//]: # (![our_work]&#40;/intro_eg.png&#41;)
 <p align="center">
-  <img src="https://github.com/Gori-LV/HENCE-X/blob/main/intro_eg.png" />
+  <img src="https://github.com/Gori-LV/HENCE-X/blob/main/intro_eg.pdf" />
 </p>
 
 [//]: # ([On Explainability of Graph Neural Networks via Subgraph Explorations]&#40;https://arxiv.org/abs/2102.05152&#41;)
