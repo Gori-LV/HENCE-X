@@ -15,7 +15,7 @@ This is the official implement of the paper HENCE-X: Toward Heterogeneity-agnost
 * create the env and install the requirements
 
 ```shell script
-$ git clone https://github.com/divelab/DIG.git
+$ git clone https://github.com/Gori-LV/HENCE-X.git
 $ cd HENCE-X
 $ source ./install.sh
 ```
@@ -30,10 +30,10 @@ $ source ./scripts.sh
 ``` 
 The hyper-parameters for different models and datasets are shown in this script.
 
-In addition, we also provide the saved searching results.
+In addition, we also provide the saved searching result.
 If you want to reproduce, you can directly download the 
-[results](https://mailustceducn-my.sharepoint.com/:u:/g/personal/yhy12138_mail_ustc_edu_cn/ERxIONDcl8xKswisrsbHo2MBoEwPAjFruUzwsLpESwalxA?e=IuFanz)
- to `HENCE-X/results`
+[result](https://mailustceducn-my.sharepoint.com/:u:/g/personal/yhy12138_mail_ustc_edu_cn/ERxIONDcl8xKswisrsbHo2MBoEwPAjFruUzwsLpESwalxA?e=IuFanz)
+ to `HENCE-X/result`
 
 Moreover, if you want to train a new model for these datasets, 
 run the training scripts for corresponding dataset.
