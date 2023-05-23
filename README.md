@@ -2,7 +2,7 @@
 
 This is the official implement of the paper HENCE-X: Toward Heterogeneity-agnostic Multi-level Explainability for Deep Graph Networks.
 
-![our_work](/intro_eg.pdf)
+![our_work](https://github.com/Gori-LV/HENCE-X/blob/main/intro_eg.pdf?raw=true)
 
 [//]: # ([On Explainability of Graph Neural Networks via Subgraph Explorations]&#40;https://arxiv.org/abs/2102.05152&#41;)
 
