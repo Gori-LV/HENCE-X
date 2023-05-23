@@ -15,13 +15,13 @@ This is the official implement of the paper HENCE-X: Toward Heterogeneity-agnost
 * create the env and install the requirements
 
 ```shell script
-$ git clone https://github.com/Gori-LV/HENCE-X.git
+$ git clone https://github.com/Gori-LV/HENCE-X
 $ cd HENCE-X
 $ source ./install.sh
 ```
 
 ## Usage
-* Download the required [dataset](https://hkustconnect-my.sharepoint.com/:f:/g/personal/glvab_connect_ust_hk/EpM6pkwnocROhKFBgJBIrqMBcfT0EX81WQA0RwpvqN923g?e=tNKQIF) to `/data`
+* Download the required [datasets](https://hkustconnect-my.sharepoint.com/:f:/g/personal/glvab_connect_ust_hk/EpM6pkwnocROhKFBgJBIrqMBcfT0EX81WQA0RwpvqN923g?e=tNKQIF) to `/data`
 * Download the [checkpoints](https://hkustconnect-my.sharepoint.com/:f:/g/personal/glvab_connect_ust_hk/Eg1VmSOyXFpHjIMP_gwXhssBR1OToeP4i75LUBlcmVgRCA?e=netLrt) to `/checkpoints`
 * run the searching scripts with corresponding dataset
 ```shell script
@@ -30,17 +30,25 @@ $ source ./scripts.sh
 ``` 
 The hyper-parameters for different models and datasets are shown in this script.
 
-In addition, we also provide the saved searching result.
-If you want to reproduce, you can directly download the 
-[result](https://mailustceducn-my.sharepoint.com/:u:/g/personal/yhy12138_mail_ustc_edu_cn/ERxIONDcl8xKswisrsbHo2MBoEwPAjFruUzwsLpESwalxA?e=IuFanz)
- to `HENCE-X/result`
+[//]: # (In addition, we also provide the saved searching result.)
 
-Moreover, if you want to train a new model for these datasets, 
-run the training scripts for corresponding dataset.
-```shell script
-$ cd HENCE-X
-$ source ./models/train_gnns.sh 
-```
+[//]: # (If you want to reproduce, you can directly download the )
+
+[//]: # ([result]&#40;https://mailustceducn-my.sharepoint.com/:u:/g/personal/yhy12138_mail_ustc_edu_cn/ERxIONDcl8xKswisrsbHo2MBoEwPAjFruUzwsLpESwalxA?e=IuFanz&#41;)
+
+[//]: # ( to `HENCE-X/result`)
+
+[//]: # (Moreover, if you want to train a new model for these datasets, )
+
+[//]: # (run the training scripts for corresponding dataset.)
+
+[//]: # (```shell script)
+
+[//]: # ($ cd HENCE-X)
+
+[//]: # ($ source ./models/train_gnns.sh )
+
+[//]: # (```)
 
 [//]: # (## Citations)
 
