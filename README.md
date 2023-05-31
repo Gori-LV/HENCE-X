@@ -23,12 +23,51 @@ $ source ./install.sh
 ## Usage
 * Download the required [datasets](https://hkustconnect-my.sharepoint.com/:f:/g/personal/glvab_connect_ust_hk/EpM6pkwnocROhKFBgJBIrqMBcfT0EX81WQA0RwpvqN923g?e=tNKQIF) to `/data`
 * Download the [checkpoints](https://hkustconnect-my.sharepoint.com/:f:/g/personal/glvab_connect_ust_hk/Eg1VmSOyXFpHjIMP_gwXhssBR1OToeP4i75LUBlcmVgRCA?e=netLrt) to `/checkpoints`
-* run the searching scripts with corresponding dataset
-```shell script
-$ cd HENCE-X
-$ source ./scripts.sh
-``` 
-The hyper-parameters for different models and datasets are shown in this script.
+* Run the script with corresponding dataset `dblp`, `imdb` or `mutag`.
+
+```sh
+python3 pipeline.py --dataset [dataset]
+```
+
+[//]: # (## Visualization)
+
+[//]: # (Run `*.ipynb` files in Jupyter Notebook or Jupyter Lab.)
+
+
+[//]: # (## Reference)
+
+[//]: # (If you make advantage of Gem in your research, please cite the following in your manuscript:)
+
+[//]: # ()
+[//]: # (```)
+
+[//]: # (@inproceedings{)
+
+[//]: # (    wanyu-icml21,)
+
+[//]: # (    title="{Generative Causal Explanations for Graph Neural Networks}",)
+
+[//]: # (    author={Lin, Wanyu and Lan, Hao and Li, Baochun},)
+
+[//]: # (    booktitle={International Conference on Machine Learning},)
+
+[//]: # (    year={2021},)
+
+[//]: # (    url={https://arxiv.org/pdf/2104.06643.pdf},)
+
+[//]: # (})
+
+[//]: # (```)
+
+[//]: # (```shell script)
+
+[//]: # ($ cd HENCE-X)
+
+[//]: # ($ source ./scripts.sh)
+
+[//]: # (``` )
+
+[//]: # (The hyper-parameters for different models and datasets are shown in this script.)
 
 [//]: # (In addition, we also provide the saved searching result.)
 
