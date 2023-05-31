@@ -132,7 +132,8 @@ class HeterExplainer:
             name = 'raw'
         else:
             neighbors = S
-            name = 'exp'
+            if name is None:
+                name = str(target)+'exp'
             g = g.subgraph(neighbors)
             # nx.draw_networkx_nodes(g, pos, nodelist=[x_ for x_ in g.nodes if x_ not in S], node_color="white", node_size=1)
 

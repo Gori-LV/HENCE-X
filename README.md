@@ -31,4 +31,4 @@ The hyper-parameters used for different datasets are shown in this script.
 
 
 ## Examples
-Run `*.ipynb` files in Jupyter Notebook or Jupyter Lab.  We provide examples of using HENCE-X to explain individual target instance and printing out the semantic meanings of the output explanation in DBLP, IMDB and MUTAG dataset, respectively.
+Run `*.ipynb` files in Jupyter Notebook or Jupyter Lab.  We provide examples on how to use HENCE-X to explain individual instances, and show the semantic meanings of output explanation in DBLP, IMDB and MUTAG dataset, respectively.
