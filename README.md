@@ -11,8 +11,8 @@ This is the official implement of the paper HENCE-X: Toward Heterogeneity-agnost
 
 
 ## Installation
-* clone the repository 
-* create the env and install the requirements
+* Clone the repository 
+* Create the env and install the requirements
 
 ```shell script
 $ git clone https://github.com/Gori-LV/HENCE-X

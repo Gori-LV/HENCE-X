@@ -1,47 +1,19 @@
-import os
-import os.path as osp
-from itertools import product
-from typing import Callable, List, Optional
-
-import numpy as np
-import scipy.sparse as sp
-import torch
 import os.path as osp
 
-from models import *
-
-import torch
 import torch_geometric.transforms as T
-
-# import torch.nn.functional as F
-# from torch_geometric.datasets import DBLP
 from torch_geometric.datasets import TUDataset
-
-# from torch_geometric.nn import Linear, HGTConv
-# import pandas as pd
-
-# import networkx as nx
-# from DBLP_adj_list import two_hop_neighborhood
-# import matplotlib.pyplot as plt
-import numpy as np
-from explainer import HeterExplainer
-# from pgmpy.estimators.CITests import chi_square
-import json
-# import copy
-# import random
-import sys
-from datetime import datetime
-# from util import Logger
-import os
-
-from tqdm import tqdm
-
 from torch_geometric.data import (
     HeteroData,
     InMemoryDataset,
-    download_url,
-    extract_zip,
 )
+
+import scipy.sparse as sp
+import numpy as np
+
+from itertools import product
+from typing import Callable, List, Optional
+
+from models import *
 
 class DBLP(InMemoryDataset):
 

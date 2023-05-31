@@ -1,35 +1,30 @@
-import networkx as nx
-import math
-import time
+import os.path as osp
+
 import torch
-import numpy as np
-import pandas as pd
+import torch.nn as nn
+
+from torch_geometric.nn import MessagePassing
+from torch_geometric.utils import k_hop_subgraph, to_networkx, sort_edge_index
+
+from scipy import stats
 from scipy.special import softmax
-# from pgmpy.estimators import ConstraintBasedEstimator
+from scipy.cluster.hierarchy import fcluster, linkage
+
 from pgmpy.estimators.CITests import chi_square, g_sq
 from pgmpy.estimators import HillClimbSearch, BicScore
 from pgmpy.models import BayesianModel
 from pgmpy.inference import VariableElimination
-from scipy import stats
-from torch_geometric.utils import sort_edge_index
 
-### bot
-# import utils
+import numpy as np
+import pandas as pd
 import matplotlib.pyplot as plt
-import torch.nn as nn
+import networkx as nx
+
+import math
+import time
 import copy
 import random
 import json
-from scipy.cluster.hierarchy import fcluster, linkage
-from torch_geometric.nn import MessagePassing
-
-from torch_geometric.utils import k_hop_subgraph, to_networkx
-
-
-import time
-import os.path as osp
-
-# import models
 
 class HeterExplainer:
     def __init__(

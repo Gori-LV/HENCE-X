@@ -1,57 +1,18 @@
-from torch_geometric.nn import GCNConv
-
-import torch
-import torch.nn as nn
-import torch.nn.functional as F
-# from torch_geometric.datasets import DBLP
-from torch_geometric.nn import Linear#, HANConv, HGTConv
-
-# from customized_hgt_conv import HGTConv
-# from customized_han_conv import HANConv
-from typing import Union, Dict
-
-from torch.nn import Sequential, Linear, BatchNorm1d, ReLU
-# from torch_geometric.datasets import TUDataset
-from torch_geometric.loader import DataLoader
-from torch_geometric.nn import GINConv, global_add_pool
-
-# import pandas as pd
-#
-# import networkx as nx
-# from DBLP_adj_list import two_hop_neighborhood
-# import matplotlib.pyplot as plt
-# import numpy as np
-# from explainer import Node_Explainer
-# from pgmpy.estimators.CITests import chi_square
-#
-import copy
-from typing import Union, Dict, Optional, List
-
 import torch
 from torch import Tensor, nn
 import torch.nn.functional as F
-
-from torch_geometric.typing import NodeType, EdgeType, Metadata, Adj
-from torch_geometric.nn.dense import Linear
-from torch_geometric.utils import softmax
-from torch_geometric.nn.conv import MessagePassing
-from torch_geometric.nn.inits import glorot, reset
-
-import math
-from typing import Dict, List, Optional, Union
-
-import torch
-import torch.nn.functional as F
-from torch import Tensor
-from torch.nn import Parameter
+from torch.nn import Parameter, Sequential, Linear, BatchNorm1d, ReLU
 from torch_sparse import SparseTensor
 
+from torch_geometric.nn import GCNConv, GINConv, global_add_pool
 from torch_geometric.nn.conv import MessagePassing
 from torch_geometric.nn.dense import Linear
 from torch_geometric.nn.inits import glorot, ones, reset
-from torch_geometric.typing import EdgeType, Metadata, NodeType
+from torch_geometric.typing import EdgeType, Metadata, NodeType, Adj
 from torch_geometric.utils import softmax
 
+import math
+from typing import Dict, List, Optional, Union
 
 def HGTgroup(xs: List[Tensor], aggr: Optional[str]) -> Optional[Tensor]:
     if len(xs) == 0:
