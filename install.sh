@@ -9,3 +9,7 @@ pip install --no-index torch-sparse -f https://pytorch-geometric.com/whl/torch-1
 pip install --no-index torch-cluster -f https://pytorch-geometric.com/whl/torch-1.6.0+${CUDA}.html
 pip install --no-index torch-spline-conv -f https://pytorch-geometric.com/whl/torch-1.6.0+${CUDA}.html
 pip install torch-geometric
+pip install tqdm
+pip install pgmpy==0.1.17
+pip install networkx==2.5
+pip install pandas==1.2.3
