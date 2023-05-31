@@ -23,12 +23,10 @@ $ source ./install.sh
 ## Usage
 * Download the required [datasets](https://hkustconnect-my.sharepoint.com/:f:/g/personal/glvab_connect_ust_hk/EpM6pkwnocROhKFBgJBIrqMBcfT0EX81WQA0RwpvqN923g?e=tNKQIF) to `/data`
 * Download the [checkpoints](https://hkustconnect-my.sharepoint.com/:f:/g/personal/glvab_connect_ust_hk/Eg1VmSOyXFpHjIMP_gwXhssBR1OToeP4i75LUBlcmVgRCA?e=netLrt) to `/checkpoints`
-* Run the script with corresponding dataset `dblp`, `imdb` or `mutag`.
-
-```sh
-python3 pipeline.py --dataset [dataset]
-```
-
+* Run the searching scripts with corresponding dataset, parameters are included in the `.sh` file.
+```shell script
+$ source ./scripts.sh
+``` 
 [//]: # (## Visualization)
 
 [//]: # (Run `*.ipynb` files in Jupyter Notebook or Jupyter Lab.)
