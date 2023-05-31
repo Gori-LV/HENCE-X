@@ -27,9 +27,8 @@ $ source ./install.sh
 ```shell script
 $ source ./scripts.sh
 ``` 
-[//]: # (## Visualization)
-
-[//]: # (Run `*.ipynb` files in Jupyter Notebook or Jupyter Lab.)
+## Examples
+Run `*.ipynb` files in Jupyter Notebook or Jupyter Lab.
 
 
 [//]: # (## Reference)
