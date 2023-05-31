@@ -139,7 +139,7 @@ def main():
         test_case = [i for i in range(x_dict['author'].shape[0]) if i not in zero_feature_cases]
 
         if prog_args.target!=None:
-            if prog_args.target in test_case:
+            if prog_args.target not in test_case:
                 raise ValueError("Illegal target: no feature on target")
             else:
                 test_case = [prog_args.target]
