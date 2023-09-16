@@ -32,3 +32,19 @@ The hyper-parameters used for different datasets are shown in this script.
 
 ## Examples
 Run `*.ipynb` files in Jupyter Notebook or Jupyter Lab.  We provide examples on how to use HENCE-X to explain individual instances, and show the semantic meanings of output explanation in DBLP, IMDB and MUTAG dataset, respectively.
+
+## Citation
+Feel free to use our code and keep up with our progress, we kindly request you to cite our work.
+
+```
+@article{lv2023hence,
+  title={HENCE-X: Toward Heterogeneity-Agnostic Multi-Level Explainability for Deep Graph Networks},
+  author={Lv, Ge and Zhang, Chen Jason and Chen, Lei},
+  journal={Proceedings of the VLDB Endowment},
+  volume={16},
+  number={11},
+  pages={2990--3003},
+  year={2023},
+  publisher={VLDB Endowment}
+}
+```
