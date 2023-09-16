@@ -37,7 +37,7 @@ Run `*.ipynb` files in Jupyter Notebook or Jupyter Lab.  We provide examples on 
 Feel free to use our code and keep up with our progress, we kindly request you to cite our work.
 
 ```
-@article{lv2023hence,
+@article{lv2023hencex,
   title={HENCE-X: Toward Heterogeneity-Agnostic Multi-Level Explainability for Deep Graph Networks},
   author={Lv, Ge and Zhang, Chen Jason and Chen, Lei},
   journal={Proceedings of the VLDB Endowment},
